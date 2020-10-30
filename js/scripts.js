@@ -6,7 +6,7 @@ function createUserInputArray() {
     userArray.push("");
     userArray[i] = main++ ;
   }
-  userArray.push(main++); // adds last number to array
+  userArray.push(main++); // adds last number to array: unfortuantley doesnt recongize replace() function if you type in numbers such as "3".
 }
 // Detects index's equal to numbers and replaces them with equalized word.
 function replace() {
@@ -30,9 +30,8 @@ function weigh() {
       userArray = word[0];
     }
   }
-
+  
 }
-
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
