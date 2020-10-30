@@ -39,20 +39,24 @@ git remote add origin [repo. link]
 Describe: compare()
 Test: "It returns false if user input is a string"
 Expect (compare("hello")).toEqual(false);
-```
-```
+
 Test: returns true if user input is an integer
 Expect (compare(3)).toEqual(true)
 ```
 ```
 Describe: createUserInputArray
 Test: returns true if there is an int value to create the string off of
-Expect: (createUserInputArray()).toEqual(true)
+Expect (createUserInputArray()).toEqual(true)
 ```
 ```
 Describe: replace()
 Test: returns true if user input matched a presupplied number (1,2,3);
-Expect: (replace()).toEqual(true)
+Expect (replace()).toEqual(true)
+```
+```
+Describe: weigh()
+Test: changes 32,21,13 into strings;
+Expect (replace()).toEqual(true)
 ```
 
 ## Legal
