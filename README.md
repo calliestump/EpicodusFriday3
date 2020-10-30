@@ -35,6 +35,20 @@ git remote add origin [repo. link]
 * Node
 
 ## **Specs**
-
+```
+Describe:
+Test:
+Expect:
+```
+```
+Describe:
+Test:
+Expect:
+```
+```
+Describe:
+Test:
+Expect:
+```
 ## Legal
 Copyright (c) 2020 Callie Stump
