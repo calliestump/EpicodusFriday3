@@ -45,8 +45,15 @@ Test: returns true if user input is an integer
 Expect (compare(3)).toEqual(true)
 ```
 ```
-Test:
-Expect:
+Describe: createUserInputArray
+Test: returns true if there is an int value to create the string off of
+Expect: (createUserInputArray()).toEqual(true)
 ```
+```
+Describe: replace()
+Test: returns true if user input matched a presupplied number (1,2,3);
+Expect: (replace()).toEqual(true)
+```
+
 ## Legal
 Copyright (c) 2020 Callie Stump
