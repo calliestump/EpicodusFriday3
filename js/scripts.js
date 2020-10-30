@@ -1,32 +1,31 @@
-/*function split(){
-  let userNum = parseInt($("input#userNumber").val());
-  let userArray = userNum.split("");
-}*/
+// Compare the index's of the two arrays and assign a result based on user input.
 function compare() {
-  //split();
-  let userNum = parseInt($("input#userNumber").val());
-    let numbers = [3,2,1];
-    word = ["Won't you be my neighbor?", "Boop", "Beep"];
-    result = "";
-    for(let i=0; i<numbers.length; i++) {
-      while(userNum>=numbers[i]){
-        result = /*result +*/ word[i];
-        userNum = userNum - numbers[i]
-        //bigUserNum = Math.max(...userArray);
-      }
-      /*if (numbers[0] > numbers[2]) {
-        result = "Won't you be my neighbor?";
-      } else if (numbers[0] > numbers[1] ) {
-          result = "Won't you be my neighbor?";
-      } else if (numbers[1] > numbers[2]); {
-      }*/
-    };
+  result = "";
+  for(let i=0; i<userArray.length; i++) {
+    if (userNum === 3) {
+      result = word[0];
+    } else if (userNum === 2) {
+      result = word[1];
+    } else if (userNum === 1) {
+      result = word[2];  
+    } 
+  }
 }
-
+// Creates array length based on user input
+function createUserInputArray() {
+  userArray = [];
+  for(let i=0; i<userNum; i++) {
+    userArray.push("");
+  }
+}
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
-      compare();
-    $("p").text(result);
     event.preventDefault();
+    userNum = parseInt($("input#userNumber").val());
+    numbers = [3,2,1];
+    word = ["Won't you be my neighbor?", "Boop", "Beep"];
+    createUserInputArray();
+    compare();
+    $("p").text(result);
   });
 });
