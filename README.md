@@ -36,17 +36,15 @@ git remote add origin [repo. link]
 
 ## **Specs**
 ```
-Describe:
-Test:
-Expect:
+Describe: compare()
+Test: "It returns false if user input is a string"
+Expect (compare("hello")).toEqual(false);
 ```
 ```
-Describe:
-Test:
-Expect:
+Test: returns true if user input is an integer
+Expect (compare(3)).toEqual(true)
 ```
 ```
-Describe:
 Test:
 Expect:
 ```
