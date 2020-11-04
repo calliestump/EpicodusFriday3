@@ -28,11 +28,11 @@ function weigh(userArray,numbers) {
 $(document).ready(function() {
   $("form#roboger").submit(function(event) {
     event.preventDefault();
+    $(".content-box").show();
     let userNum = parseInt($("input#userNumber").val());
     let numbers = [3,2,1];
     let word = ["Won't you be my neighbor?", "Boop", "Beep"];
     let userArray = createUserInputArray(userNum, numbers, word);
-    alert(userArray);
     console.log(userArray);
     weigh(userArray, numbers);
     $("p").text(userArray);
