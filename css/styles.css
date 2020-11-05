@@ -20,8 +20,19 @@ input {
   text-align: center;
 }
 .content-box {
+  height: auto;
+  width: auto;
+  font-size: 80%;
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
   display: none;
+
+}
+
+p#result {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 15%;
+  margin-left: 10%;
 }
